@@ -1,0 +1,18 @@
+#!/sbin/openrc-run
+# author: abdul2926
+
+start() {
+        ebegin "Starting qBittorrent"
+        start-stop-daemon --quiet --background --start qbittorrent-nox
+        eend $?
+}
+
+stop() {
+        ebegin "Stopping qBittorrent"
+        id=`pgrep qbittorrent-nox`
+        if [[ $id > 0 ]]; then
+                kill $id
+                exit 0
+        fi
+        eend $?
+}
