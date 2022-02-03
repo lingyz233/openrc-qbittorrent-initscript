@@ -12,5 +12,6 @@
 - Run on startup: `rc-update add qbittorrent default`
 
 ### Note
-Running `rc-service qbittorrent restart` will not work because qBittorrent does not
-stop immediately and will refuse to start if it detects that it is already running. 
+[=Running `rc-service qbittorrent restart` will not work because qBittorrent does not=]
+[=stop immediately and will refuse to start if it detects that it is already running. =]
+In this version, it seems that `rc-service qbittorrent restart` works without any errors.

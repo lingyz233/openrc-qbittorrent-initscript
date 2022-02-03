@@ -1,5 +1,5 @@
 #!/sbin/openrc-run
-# author: abdul2926
+# author: abdul2926, lingyz233
 
 start() {
         ebegin "Starting qBittorrent"
